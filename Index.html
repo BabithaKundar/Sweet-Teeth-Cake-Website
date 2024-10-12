@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cake Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Sweet Teeth</h1>
+        <nav>
+            <ul>
+                <li><a href="#cakes">Cakes</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart" id="cart-link">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cakes">
+            <h2>Our Cakes</h2>
+            <input type="text" id="search-input" placeholder="What is in your mind?" />
+
+            <div class="cake-container" id="cake-list">
+                <div class="cake" data-id="1">
+                    <img src="chocolate.jpeg" alt="Chocolate Cake">
+                    <h3>Chocolate Cake</h3>
+                    <p>500Rs</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="cake" data-id="2">
+                    <img src="vanilla.png" alt="Vanilla Cake">
+                    <h3>Vanilla Cake</h3>
+                    <p>600Rs</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="cake" data-id="3">
+                    <img src="red.jpeg" alt="Red Velvet Cake">
+                    <h3>Red Velvet Cake</h3>
+                    <p>300Rs</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="cake" data-id="4">
+                    <img src="rain.jpeg" alt="Rainbow Cake">
+                    <h3>Rainbow Cake</h3>
+                    <p>400Rs</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="cake" data-id="5">
+                    <img src="Strawberry.jpg" alt="Strawberry Cake">
+                    <h3>Strawberry Cake</h3>
+                    <p>550Rs</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="cake" data-id="7">
+                    <img src="blackforest.webp" alt="Black Forest Cake">
+                    <h3>Black Forest Cake</h3>
+                    <p>700Rs</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="cake" data-id="8">
+                    <img src="coffee.jpeg" alt="Coffee Cake">
+                    <h3>Coffee Cake</h3>
+                    <p>650Rs</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 align="center">About Us</h2>
+            <p>Sweeten up your celebrations with Sweet Teeth's artisanal cakes, crafted with passion and precision. From classic to custom, our delicious creations make life's moments truly unforgettable</p>
+        </section>
+
+        <section id="contact">
+            <h2 align="center">Contact Us</h2>
+            <p align="center">Email: SweetTeeth@g.com <br>+91 9087654323</p>
+        </section>
+
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Your Cart</h2>
+                <ul id="cart-items"></ul>
+                <p id="total-price">Total: $0.00</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p align="center">&copy; 2024 Cake Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
